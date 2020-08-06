@@ -1,0 +1,15 @@
+#!/bin/bash
+#Author: nikohuanghuang <github.com/nikohuanghuang>
+#Update: 2020-08-06
+#Usage: installmygraph
+#For convenience, 'tree2dotx' was forked from <https://github.com/tinyclub/linux-0.11-lab>, so no need to 'wget' or 'curl'
+
+apt-get install cflow
+apt-get install gawk
+apt-get install graphviz
+cp ./tree2dotx /usr/bin
+chmod +x /usr/bin/tree2dotx
+cp ./mygraph /usr/bin
+chmod +x /usr/bin/mygraph
+
+

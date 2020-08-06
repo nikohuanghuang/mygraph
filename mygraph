@@ -1,0 +1,7 @@
+#!/bin/bash
+#Author: nikohuanghuang <github.com/nikohuanghuang>
+#Update: 2020-08-06
+#Usage: mygraph <functionname> <file>
+
+cflow -T -m $1 $2 | tree2dotx > $1.dot
+dot -Tgif $1.dot -o $1.gif
